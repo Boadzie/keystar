@@ -3,7 +3,11 @@ import { COHERE_API_KEY } from '$env/static/private';
 import { CohereClient } from 'cohere-ai';
 
 export const load = async ({ locals }) => {
-	const keys = await getKeys(locals.text);
+	let keys = '';
+	if (locals.text) {
+		keys = await getKeys(locals.text);
+	}
+
 	// const results = keys;
 	// console.log(keys);
 	return {
@@ -28,6 +32,7 @@ export const actions = {
 		const text = formData.get('text');
 
 		locals.text = text;
+
 		return {
 			success: true
 		};
