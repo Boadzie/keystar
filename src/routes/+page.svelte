@@ -5,7 +5,7 @@
 	const { results } = data;
 	const keys = results.split(', ');
 
-	let loading = false;
+	// let loading = false;
 </script>
 
 <section class="container mx-auto px-4 lg:px-24 py-14">
@@ -20,16 +20,13 @@
 			<CardBody>
 				<form method="POST" class="m-2">
 					<Textarea
-						class="min-h-64 mb-4"
+						class="min-h-64 mb-4 focus:ring-0 "
 						rows="10"
 						name="text"
 						placeholder="Enter your text here..."
 					></Textarea>
 
 					<Button type="submit">Submit</Button>
-					{#if loading}
-						<div>loading....</div>
-					{/if}
 				</form>
 			</CardBody>
 		</Card>
