@@ -7,9 +7,9 @@
 <svelte:head>
 	<link rel="stylesheet" href={tabler} />
 </svelte:head>
-<Navbar theme="dark">
-	<NavbarItem icon="home" title="Home" />
-	<NavbarItem icon="star" title="About" />
+<Navbar class="font-bold">
+	<NavbarItem class="hover:text-blue-500" icon="home" title="Home" />
+	<NavbarItem class="hover:text-blue-500" icon="phone" title="About" />
 </Navbar>
 <main>
 	<slot />
