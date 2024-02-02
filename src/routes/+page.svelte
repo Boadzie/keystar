@@ -23,6 +23,7 @@
 					<textarea
 						class="input rounded-md p-4 ring-0 text-slate-500 placeholder:font-medium w-full min-h-64 mb-4 focus:ring-0 focus:outline-none"
 						name="text"
+						required
 						placeholder="Enter your text here..."
 					></textarea>
 
