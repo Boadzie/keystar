@@ -1,6 +1,6 @@
 <script>
 	import { CardBody, El, Card, Textarea, Button, Badge } from 'yesvelte';
-	import { enhance } from '$app/forms';
+	// import { enhance } from '$app/forms';
 	export let data;
 	const { results } = data;
 	const keys = results.split(', ');
@@ -15,12 +15,13 @@
 		unmatched application experience! <br /> Enter the job details below to receive relevant keywords
 		for your CV.
 	</El>
+
 	<div class="grid grid-cols-1 lg:grid-cols-2 gap-4 place-content-center">
 		<Card>
 			<CardBody>
 				<form method="POST" class="m-2">
 					<Textarea
-						class="min-h-64 mb-4 focus:ring-0 "
+						class="min-h-64 mb-4 focus:ring-0 focus:outline-none"
 						rows="10"
 						name="text"
 						placeholder="Enter your text here..."
