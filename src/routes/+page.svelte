@@ -20,12 +20,11 @@
 		<Card>
 			<CardBody>
 				<form method="POST" class="m-2">
-					<Textarea
-						class="min-h-64 mb-4 focus:ring-0 focus:outline-none"
-						rows="10"
+					<textarea
+						class="input rounded-md p-4 ring-0 placeholder:text-slate-300 placeholder:font-medium w-full min-h-64 mb-4 focus:ring-0 focus:outline-none"
 						name="text"
 						placeholder="Enter your text here..."
-					></Textarea>
+					></textarea>
 
 					<Button type="submit">Submit</Button>
 				</form>
